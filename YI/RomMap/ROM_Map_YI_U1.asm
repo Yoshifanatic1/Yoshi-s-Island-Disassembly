@@ -44,7 +44,7 @@ macro YI_GlobalAssemblySettings()
 	!Define_Global_FixIncorrectChecksumHack = !FALSE
 	!Define_Global_ROMFrameworkVer = 1
 	!Define_Global_ROMFrameworkSubVer = 0
-	!Define_Global_ROMFrameworkSubSubVer = 0
+	!Define_Global_ROMFrameworkSubSubVer = 1
 	!Define_Global_AsarChecksum = $0000
 	!Define_Global_LicenseeName = "Nintendo"
 	!Define_Global_DeveloperName = "Nintendo EAD"
