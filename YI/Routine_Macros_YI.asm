@@ -23282,13 +23282,13 @@ CODE_02937E:
 
 ;---------------------------------------------------------------------------
 
-YI_NorSpr04D_Unknown_Init:
+YI_NorSpr04D_UnusedSpriteIndex_Init:
 ;$029381:
 	RTL
 
 ;---------------------------------------------------------------------------
 
-YI_NorSpr04D_Unknown_Main:
+YI_NorSpr04D_UnusedSpriteIndex_Main:
 ;$029382
 	RTL
 
@@ -24350,7 +24350,8 @@ YI_NorSpr0D8_ChompWarningSign_Main:
 
 ;---------------------------------------------------------------------------
 
-CODE_029C8B:
+YI_NorSpr0DE_FallingRockPlatform_Init:
+;$029C8B
 	LDA.w $70E2,x
 	STA.w !REGISTER_SuperFX_R1_PLOTXCoordinateLo
 	LDA.w $7182,x
@@ -24395,7 +24396,8 @@ CODE_029CAE:
 
 ;---------------------------------------------------------------------------
 
-CODE_029CEB:
+YI_NorSpr0DE_FallingRockPlatform_Main:
+;$029CEB
 	JSR.w CODE_029DF6
 	LDA.b $18,x
 	BNE.b CODE_029D54
@@ -35673,7 +35675,7 @@ DATA_038000:
 	dl YI_NorSpr04A_ThunderLakituFireBlast2_Init
 	dl YI_NorSpr04B_ThunderLakituFireBlast3_Init
 	dl YI_NorSpr04C_UpsidedownBlowHard_Init
-	dl YI_NorSpr04D_Unknown_Init
+	dl YI_NorSpr04D_UnusedSpriteIndex_Init
 	dl YI_NorSpr04E_LockedDoor_Init
 	dl YI_NorSpr04F_MiddleRing_Init
 	dl YI_NorSpr050_GreyRotatingWoodenBoard_Init
@@ -35689,7 +35691,7 @@ DATA_038000:
 	dl YI_NorSpr05A_RaphaelSparkAttack_Init
 	dl YI_NorSpr05B_RedCoinBandit_Init
 	dl YI_NorSpr05C_PinkToady_Init
-	dl YI_NorSpr05D_Unknown_Init
+	dl YI_NorSpr05D_GlitchedSprite_Init
 	dl YI_NorSpr05E_BrownWoodenBoard_Init
 	dl YI_NorSpr05F_AutoRotateBrownWoodenBoard_Init
 	dl YI_NorSpr060_Bomb_Init
@@ -35730,7 +35732,7 @@ DATA_038000:
 	dl YI_NorSpr083_BowserFightCloud_Init
 	dl YI_NorSpr084_TeleportSprite_Init
 	dl YI_NorSpr085_HarryHedgehog_Init
-	dl YI_NorSpr086_Unknown_Init
+	dl YI_NorSpr086_GlitchedSprite_Init
 	dl YI_NorSpr087_MockUpLaidEgg_Init
 	dl YI_NorSpr088_SuperStar_Init
 	dl YI_NorSpr089_HorizontalMovingRedPlatform_Init
@@ -35818,7 +35820,7 @@ DATA_038000:
 	dl YI_NorSpr0DB_SoftBlock_Init
 	dl YI_NorSpr0DC_Snowball_Init
 	dl YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_Init
-	dl CODE_029C8B
+	dl YI_NorSpr0DE_FallingRockPlatform_Init
 	dl YI_NorSpr0DF_PiscatoryPete_Init
 	dl YI_NorSpr0E0_PreyingMantas_Init
 	dl YI_NorSpr0E1_LochNestor_Init
@@ -36001,7 +36003,7 @@ DATA_038000:
 	dl YI_NorSpr192_PetalGuy_Init
 	dl YI_NorSpr193_SnakeCagedGhost_Init
 	dl YI_NorSpr194_Blargg_Init
-	dl YI_NorSpr195_Unknown_Init
+	dl YI_NorSpr195_SmallUnstableSnowPlatform_Init
 	dl YI_NorSpr196_UnstableSnowPlatform_Init
 	dl YI_NorSpr197_ArrowSign_Init
 	dl YI_NorSpr198_DiagonalArrowSign_Init
@@ -36037,7 +36039,7 @@ DATA_038000:
 	dl YI_NorSpr1B6_MinigameBalloon_Init
 	dl YI_NorSpr1B7_SeedSpittingMinigameBandit_Init
 	dl YI_NorSpr1B8_WatermelonPot_Init
-	dl CODE_11C640
+	dl YI_NorSpr1B9_P2SeedSpittingMinigameBandit_Init
 
 DATA_03852E:
 	dl YI_NorSpr000_LavaLog_Main
@@ -36117,7 +36119,7 @@ DATA_03852E:
 	dl YI_NorSpr04A_ThunderLakituFireBlast2_Main
 	dl YI_NorSpr04B_ThunderLakituFireBlast3_Main
 	dl YI_NorSpr04C_UpsidedownBlowHard_Main
-	dl YI_NorSpr04D_Unknown_Main
+	dl YI_NorSpr04D_UnusedSpriteIndex_Main
 	dl YI_NorSpr04E_LockedDoor_Main
 	dl YI_NorSpr04F_MiddleRing_Main
 	dl YI_NorSpr050_GreyRotatingWoodenBoard_Main
@@ -36133,7 +36135,7 @@ DATA_03852E:
 	dl YI_NorSpr05A_RaphaelSparkAttack_Main
 	dl YI_NorSpr05B_RedCoinBandit_Main
 	dl YI_NorSpr05C_PinkToady_Main
-	dl YI_NorSpr05D_Unknown_Main
+	dl YI_NorSpr05D_GlitchedSprite_Main
 	dl YI_NorSpr05E_BrownWoodenBoard_Main
 	dl YI_NorSpr05F_AutoRotateBrownWoodenBoard_Main
 	dl YI_NorSpr060_Bomb_Main
@@ -36174,7 +36176,7 @@ DATA_03852E:
 	dl YI_NorSpr083_BowserFightCloud_Main
 	dl YI_NorSpr084_TeleportSprite_Main
 	dl YI_NorSpr085_HarryHedgehog_Main
-	dl YI_NorSpr086_Unknown_Main
+	dl YI_NorSpr086_GlitchedSprite_Main
 	dl YI_NorSpr087_MockUpLaidEgg_Main
 	dl YI_NorSpr088_SuperStar_Main
 	dl YI_NorSpr089_HorizontalMovingRedPlatform_Main
@@ -36262,7 +36264,7 @@ DATA_03852E:
 	dl YI_NorSpr0DB_SoftBlock_Main
 	dl YI_NorSpr0DC_Snowball_Main
 	dl YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_Main
-	dl CODE_029CEB
+	dl YI_NorSpr0DE_FallingRockPlatform_Main
 	dl YI_NorSpr0DF_PiscatoryPete_Main
 	dl YI_NorSpr0E0_PreyingMantas_Main
 	dl YI_NorSpr0E1_LochNestor_Main
@@ -36445,7 +36447,7 @@ DATA_03852E:
 	dl YI_NorSpr192_PetalGuy_Main
 	dl YI_NorSpr193_SnakeCagedGhost_Main
 	dl YI_NorSpr194_Blargg_Main
-	dl YI_NorSpr195_Unknown_Main
+	dl YI_NorSpr195_SmallUnstableSnowPlatform_Main
 	dl YI_NorSpr196_UnstableSnowPlatform_Main
 	dl YI_NorSpr197_ArrowSign_Main
 	dl YI_NorSpr198_DiagonalArrowSign_Main
@@ -36481,7 +36483,7 @@ DATA_03852E:
 	dl YI_NorSpr1B6_MinigameBalloon_Main
 	dl YI_NorSpr1B7_SeedSpittingMinigameBandit_Main
 	dl YI_NorSpr1B8_WatermelonPot_Main
-	dl CODE_11C679
+	dl YI_NorSpr1B9_P2SeedSpittingMinigameBandit_Main
 
 DATA_038A5C:
 	dl YI_NorSpr000_LavaLog_StompRt
@@ -36561,7 +36563,7 @@ DATA_038A5C:
 	dl YI_NorSpr04A_ThunderLakituFireBlast2_StompRt
 	dl YI_NorSpr04B_ThunderLakituFireBlast3_StompRt
 	dl YI_NorSpr04C_UpsidedownBlowHard_StompRt
-	dl YI_NorSpr04D_Unknown_StompRt
+	dl YI_NorSpr04D_UnusedSpriteIndex_StompRt
 	dl YI_NorSpr04E_LockedDoor_StompRt
 	dl YI_NorSpr04F_MiddleRing_StompRt
 	dl YI_NorSpr050_GreyRotatingWoodenBoard_StompRt
@@ -36577,7 +36579,7 @@ DATA_038A5C:
 	dl YI_NorSpr05A_RaphaelSparkAttack_StompRt
 	dl YI_NorSpr05B_RedCoinBandit_StompRt
 	dl YI_NorSpr05C_PinkToady_StompRt
-	dl YI_NorSpr05D_Unknown_StompRt
+	dl YI_NorSpr05D_GlitchedSprite_StompRt
 	dl YI_NorSpr05E_BrownWoodenBoard_StompRt
 	dl YI_NorSpr05F_AutoRotateBrownWoodenBoard_StompRt
 	dl YI_NorSpr060_Bomb_StompRt
@@ -36618,7 +36620,7 @@ DATA_038A5C:
 	dl YI_NorSpr083_BowserFightCloud_StompRt
 	dl YI_NorSpr084_TeleportSprite_StompRt
 	dl YI_NorSpr085_HarryHedgehog_StompRt
-	dl YI_NorSpr086_Unknown_StompRt
+	dl YI_NorSpr086_GlitchedSprite_StompRt
 	dl YI_NorSpr087_MockUpLaidEgg_StompRt
 	dl YI_NorSpr088_SuperStar_StompRt
 	dl YI_NorSpr089_HorizontalMovingRedPlatform_StompRt
@@ -36706,7 +36708,7 @@ DATA_038A5C:
 	dl YI_NorSpr0DB_SoftBlock_StompRt
 	dl YI_NorSpr0DC_Snowball_StompRt
 	dl YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_StompRt
-	dl CODE_039A6B
+	dl YI_NorSpr0DE_FallingRockPlatform_StompRt
 	dl YI_NorSpr0DF_PiscatoryPete_StompRt
 	dl YI_NorSpr0E0_PreyingMantas_StompRt
 	dl YI_NorSpr0E1_LochNestor_StompRt
@@ -36889,7 +36891,7 @@ DATA_038A5C:
 	dl YI_NorSpr192_PetalGuy_StompRt
 	dl YI_NorSpr193_SnakeCagedGhost_StompRt
 	dl YI_NorSpr194_Blargg_StompRt
-	dl YI_NorSpr195_Unknown_StompRt
+	dl YI_NorSpr195_SmallUnstableSnowPlatform_StompRt
 	dl YI_NorSpr196_UnstableSnowPlatform_StompRt
 	dl YI_NorSpr197_ArrowSign_StompRt
 	dl YI_NorSpr198_DiagonalArrowSign_StompRt
@@ -36925,7 +36927,7 @@ DATA_038A5C:
 	dl YI_NorSpr1B6_MinigameBalloon_StompRt
 	dl YI_NorSpr1B7_SeedSpittingMinigameBandit_StompRt
 	dl YI_NorSpr1B8_WatermelonPot_StompRt
-	dl CODE_039A6B
+	dl YI_NorSpr1B9_P2SeedSpittingMinigameBandit_StompRt
 
 DATA_038F8A:
 	dl YI_NorSpr000_LavaLog_RideYoshiRt
@@ -37005,7 +37007,7 @@ DATA_038F8A:
 	dl YI_NorSpr04A_ThunderLakituFireBlast2_RideYoshiRt
 	dl YI_NorSpr04B_ThunderLakituFireBlast3_RideYoshiRt
 	dl YI_NorSpr04C_UpsidedownBlowHard_RideYoshiRt
-	dl YI_NorSpr04D_Unknown_RideYoshiRt
+	dl YI_NorSpr04D_UnusedSpriteIndex_RideYoshiRt
 	dl YI_NorSpr04E_LockedDoor_RideYoshiRt
 	dl YI_NorSpr04F_MiddleRing_RideYoshiRt
 	dl YI_NorSpr050_GreyRotatingWoodenBoard_RideYoshiRt
@@ -37021,7 +37023,7 @@ DATA_038F8A:
 	dl YI_NorSpr05A_RaphaelSparkAttack_RideYoshiRt
 	dl YI_NorSpr05B_RedCoinBandit_RideYoshiRt
 	dl YI_NorSpr05C_PinkToady_RideYoshiRt
-	dl YI_NorSpr05D_Unknown_RideYoshiRt
+	dl YI_NorSpr05D_GlitchedSprite_RideYoshiRt
 	dl YI_NorSpr05E_BrownWoodenBoard_RideYoshiRt
 	dl YI_NorSpr05F_AutoRotateBrownWoodenBoard_RideYoshiRt
 	dl YI_NorSpr060_Bomb_RideYoshiRt
@@ -37062,7 +37064,7 @@ DATA_038F8A:
 	dl YI_NorSpr083_BowserFightCloud_RideYoshiRt
 	dl YI_NorSpr084_TeleportSprite_RideYoshiRt
 	dl YI_NorSpr085_HarryHedgehog_RideYoshiRt
-	dl YI_NorSpr086_Unknown_RideYoshiRt
+	dl YI_NorSpr086_GlitchedSprite_RideYoshiRt
 	dl YI_NorSpr087_MockUpLaidEgg_RideYoshiRt
 	dl YI_NorSpr088_SuperStar_RideYoshiRt
 	dl YI_NorSpr089_HorizontalMovingRedPlatform_RideYoshiRt
@@ -37150,7 +37152,7 @@ DATA_038F8A:
 	dl YI_NorSpr0DB_SoftBlock_RideYoshiRt
 	dl YI_NorSpr0DC_Snowball_RideYoshiRt
 	dl YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_RideYoshiRt
-	dl CODE_039A6B
+	dl YI_NorSpr0DE_FallingRockPlatform_RideYoshiRt
 	dl YI_NorSpr0DF_PiscatoryPete_RideYoshiRt
 	dl YI_NorSpr0E0_PreyingMantas_RideYoshiRt
 	dl YI_NorSpr0E1_LochNestor_RideYoshiRt
@@ -37333,7 +37335,7 @@ DATA_038F8A:
 	dl YI_NorSpr192_PetalGuy_RideYoshiRt
 	dl YI_NorSpr193_SnakeCagedGhost_RideYoshiRt
 	dl YI_NorSpr194_Blargg_RideYoshiRt
-	dl YI_NorSpr195_Unknown_RideYoshiRt
+	dl YI_NorSpr195_SmallUnstableSnowPlatform_RideYoshiRt
 	dl YI_NorSpr196_UnstableSnowPlatform_RideYoshiRt
 	dl YI_NorSpr197_ArrowSign_RideYoshiRt
 	dl YI_NorSpr198_DiagonalArrowSign_RideYoshiRt
@@ -37369,7 +37371,7 @@ DATA_038F8A:
 	dl YI_NorSpr1B6_MinigameBalloon_RideYoshiRt
 	dl YI_NorSpr1B7_SeedSpittingMinigameBandit_RideYoshiRt
 	dl YI_NorSpr1B8_WatermelonPot_RideYoshiRt
-	dl CODE_039A6B
+	dl YI_NorSpr1B9_P2SeedSpittingMinigameBandit_RideYoshiRt
 
 ;---------------------------------------------------------------------------
 
@@ -38163,7 +38165,7 @@ YI_NorSpr049_ThunderLakituFireBlast1_StompRt:
 YI_NorSpr04A_ThunderLakituFireBlast2_StompRt:
 YI_NorSpr04B_ThunderLakituFireBlast3_StompRt:
 YI_NorSpr04C_UpsidedownBlowHard_StompRt:
-YI_NorSpr04D_Unknown_StompRt:
+YI_NorSpr04D_UnusedSpriteIndex_StompRt:
 YI_NorSpr04E_LockedDoor_StompRt:
 YI_NorSpr04F_MiddleRing_StompRt:
 YI_NorSpr050_GreyRotatingWoodenBoard_StompRt:
@@ -38176,7 +38178,7 @@ YI_NorSpr056_4PinkRotatingPlatforms_StompRt:
 YI_NorSpr057_SewerGhostWithPlatform_StompRt:
 YI_NorSpr059_StationarySuperStar_StompRt:
 YI_NorSpr05A_RaphaelSparkAttack_StompRt:
-YI_NorSpr05D_Unknown_StompRt:
+YI_NorSpr05D_GlitchedSprite_StompRt:
 YI_NorSpr05E_BrownWoodenBoard_StompRt:
 YI_NorSpr05F_AutoRotateBrownWoodenBoard_StompRt:
 YI_NorSpr060_Bomb_StompRt:
@@ -38213,7 +38215,7 @@ YI_NorSpr082_ChainChomp_StompRt:
 YI_NorSpr083_BowserFightCloud_StompRt:
 YI_NorSpr084_TeleportSprite_StompRt:
 YI_NorSpr085_HarryHedgehog_StompRt:
-YI_NorSpr086_Unknown_StompRt:
+YI_NorSpr086_GlitchedSprite_StompRt:
 YI_NorSpr087_MockUpLaidEgg_StompRt:
 YI_NorSpr088_SuperStar_StompRt:
 YI_NorSpr089_HorizontalMovingRedPlatform_StompRt:
@@ -38295,6 +38297,7 @@ YI_NorSpr0DA_FlowerPot_StompRt:
 YI_NorSpr0DB_SoftBlock_StompRt:
 YI_NorSpr0DC_Snowball_StompRt:
 YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_StompRt:
+YI_NorSpr0DE_FallingRockPlatform_StompRt:
 YI_NorSpr0DF_PiscatoryPete_StompRt:
 YI_NorSpr0E0_PreyingMantas_StompRt:
 YI_NorSpr0E1_LochNestor_StompRt:
@@ -38451,7 +38454,7 @@ YI_NorSpr191_Bird_StompRt:
 YI_NorSpr192_PetalGuy_StompRt:
 YI_NorSpr193_SnakeCagedGhost_StompRt:
 YI_NorSpr194_Blargg_StompRt:
-YI_NorSpr195_Unknown_StompRt:
+YI_NorSpr195_SmallUnstableSnowPlatform_StompRt:
 YI_NorSpr196_UnstableSnowPlatform_StompRt:
 YI_NorSpr197_ArrowSign_StompRt:
 YI_NorSpr198_DiagonalArrowSign_StompRt:
@@ -38474,6 +38477,7 @@ YI_NorSpr1B4_MinigameCheckeredPlatform_StompRt:
 YI_NorSpr1B5_PoppingBalloonsBandit_StompRt:
 YI_NorSpr1B6_MinigameBalloon_StompRt:
 YI_NorSpr1B8_WatermelonPot_StompRt:
+YI_NorSpr1B9_P2SeedSpittingMinigameBandit_StompRt:
 YI_NorSpr000_LavaLog_RideYoshiRt:
 YI_NorSpr001_ClosedDoor_RideYoshiRt:
 YI_NorSpr002_NavalPiranhaVines_RideYoshiRt:
@@ -38550,7 +38554,7 @@ YI_NorSpr049_ThunderLakituFireBlast1_RideYoshiRt:
 YI_NorSpr04A_ThunderLakituFireBlast2_RideYoshiRt:
 YI_NorSpr04B_ThunderLakituFireBlast3_RideYoshiRt:
 YI_NorSpr04C_UpsidedownBlowHard_RideYoshiRt:
-YI_NorSpr04D_Unknown_RideYoshiRt:
+YI_NorSpr04D_UnusedSpriteIndex_RideYoshiRt:
 YI_NorSpr04E_LockedDoor_RideYoshiRt:
 YI_NorSpr04F_MiddleRing_RideYoshiRt:
 YI_NorSpr050_GreyRotatingWoodenBoard_RideYoshiRt:
@@ -38566,7 +38570,7 @@ YI_NorSpr059_StationarySuperStar_RideYoshiRt:
 YI_NorSpr05A_RaphaelSparkAttack_RideYoshiRt:
 YI_NorSpr05B_RedCoinBandit_RideYoshiRt:
 YI_NorSpr05C_PinkToady_RideYoshiRt:
-YI_NorSpr05D_Unknown_RideYoshiRt:
+YI_NorSpr05D_GlitchedSprite_RideYoshiRt:
 YI_NorSpr05E_BrownWoodenBoard_RideYoshiRt:
 YI_NorSpr05F_AutoRotateBrownWoodenBoard_RideYoshiRt:
 YI_NorSpr060_Bomb_RideYoshiRt:
@@ -38606,7 +38610,7 @@ YI_NorSpr082_ChainChomp_RideYoshiRt:
 YI_NorSpr083_BowserFightCloud_RideYoshiRt:
 YI_NorSpr084_TeleportSprite_RideYoshiRt:
 YI_NorSpr085_HarryHedgehog_RideYoshiRt:
-YI_NorSpr086_Unknown_RideYoshiRt:
+YI_NorSpr086_GlitchedSprite_RideYoshiRt:
 YI_NorSpr087_MockUpLaidEgg_RideYoshiRt:
 YI_NorSpr088_SuperStar_RideYoshiRt:
 YI_NorSpr089_HorizontalMovingRedPlatform_RideYoshiRt:
@@ -38694,6 +38698,7 @@ YI_NorSpr0DA_FlowerPot_RideYoshiRt:
 YI_NorSpr0DB_SoftBlock_RideYoshiRt:
 YI_NorSpr0DC_Snowball_RideYoshiRt:
 YI_NorSpr0DD_CloseWallInNavalPiranhaRoom_RideYoshiRt:
+YI_NorSpr0DE_FallingRockPlatform_RideYoshiRt:
 YI_NorSpr0DF_PiscatoryPete_RideYoshiRt:
 YI_NorSpr0E0_PreyingMantas_RideYoshiRt:
 YI_NorSpr0E1_LochNestor_RideYoshiRt:
@@ -38874,7 +38879,7 @@ YI_NorSpr191_Bird_RideYoshiRt:
 YI_NorSpr192_PetalGuy_RideYoshiRt:
 YI_NorSpr193_SnakeCagedGhost_RideYoshiRt:
 YI_NorSpr194_Blargg_RideYoshiRt:
-YI_NorSpr195_Unknown_RideYoshiRt:
+YI_NorSpr195_SmallUnstableSnowPlatform_RideYoshiRt:
 YI_NorSpr196_UnstableSnowPlatform_RideYoshiRt:
 YI_NorSpr197_ArrowSign_RideYoshiRt:
 YI_NorSpr198_DiagonalArrowSign_RideYoshiRt:
@@ -38910,7 +38915,8 @@ YI_NorSpr1B5_PoppingBalloonsBandit_RideYoshiRt:
 YI_NorSpr1B6_MinigameBalloon_RideYoshiRt:
 YI_NorSpr1B7_SeedSpittingMinigameBandit_RideYoshiRt:
 YI_NorSpr1B8_WatermelonPot_RideYoshiRt:
-CODE_039A6B:
+YI_NorSpr1B9_P2SeedSpittingMinigameBandit_RideYoshiRt:
+;$039A6B
 	RTL
 
 ;---------------------------------------------------------------------------
@@ -81307,10 +81313,10 @@ CODE_05FFC3:
 
 ;---------------------------------------------------------------------------
 
-YI_NorSpr05D_Unknown_Init:
-YI_NorSpr086_Unknown_Init:
-YI_NorSpr05D_Unknown_Main:
-YI_NorSpr086_Unknown_Main:
+YI_NorSpr05D_GlitchedSprite_Init:
+YI_NorSpr086_GlitchedSprite_Init:
+YI_NorSpr05D_GlitchedSprite_Main:
+YI_NorSpr086_GlitchedSprite_Main:
 ;$05FFC4
 if !Define_Global_ROMToAssemble&(!ROM_YI_U2) != $00
 	%InsertGarbageData($05FFE6, incbin, DATA_05FFE6_YI_U2.bin)
@@ -111442,7 +111448,7 @@ DATA_0C8634:
 DATA_0C8639:
 	db $20,$01,$02,$01,$01
 
-YI_NorSpr195_Unknown_Init:
+YI_NorSpr195_SmallUnstableSnowPlatform_Init:
 ;$0C863E
 	STZ.w $7400,x
 	LDA.w $70E2,x
@@ -111502,7 +111508,7 @@ CODE_0C86B1:
 DATA_0C86B5:
 	dw $0010,$0000,$FFF0,$FFE0
 
-YI_NorSpr195_Unknown_Main:
+YI_NorSpr195_SmallUnstableSnowPlatform_Main:
 ;$0C86BD
 	JSL.l CODE_03AA52
 	JSL.l CODE_03AF23
@@ -185634,7 +185640,8 @@ CODE_11C632:
 
 ;---------------------------------------------------------------------------
 
-CODE_11C640:
+YI_NorSpr1B9_P2SeedSpittingMinigameBandit_Init:
+;$11C640
 	LDA.w #$00C0
 	STA.w $7182,x
 	LDA.w #$00C0
@@ -185662,7 +185669,8 @@ DATA_11C66D:
 DATA_11C671:
 	dw $0010,$00E0,$0011,$0012
 
-CODE_11C679:
+YI_NorSpr1B9_P2SeedSpittingMinigameBandit_Main:
+;$11C679
 	LDA.w !EXRAM_YI_Level_NorSpr_CurrentStatus|!EXRAMBankMirror,x
 	CMP.w #$0010
 	BNE.b CODE_11C6A2

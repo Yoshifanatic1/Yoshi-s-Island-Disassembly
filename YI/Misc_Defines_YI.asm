@@ -320,7 +320,7 @@
 !Define_YI_NorSpr04A_ThunderLakituFireBlast2 = $004A
 !Define_YI_NorSpr04B_ThunderLakituFireBlast3 = $004B
 !Define_YI_NorSpr04C_UpsidedownBlowHard = $004C			; (ie. Spiked plant that spits projectiles)
-!Define_YI_NorSpr04D_Unknown = $004D
+!Define_YI_NorSpr04D_UnusedSpriteIndex = $004D
 !Define_YI_NorSpr04E_LockedDoor = $004E
 !Define_YI_NorSpr04F_MiddleRing = $004F
 !Define_YI_NorSpr050_GreyRotatingWoodenBoard = $0050
@@ -336,7 +336,7 @@
 !Define_YI_NorSpr05A_RaphaelSparkAttack = $005A
 !Define_YI_NorSpr05B_RedCoinBandit = $005B
 !Define_YI_NorSpr05C_PinkToady = $005C
-!Define_YI_NorSpr05D_Unknown = $005D
+!Define_YI_NorSpr05D_GlitchedSprite = $005D
 !Define_YI_NorSpr05E_BrownWoodenBoard = $005E
 !Define_YI_NorSpr05F_AutoRotateBrownWoodenBoard = $005F
 !Define_YI_NorSpr060_Bomb = $0060
@@ -377,7 +377,7 @@
 !Define_YI_NorSpr083_BowserFightCloud = $0083
 !Define_YI_NorSpr084_TeleportSprite = $0084
 !Define_YI_NorSpr085_HarryHedgehog = $0085
-!Define_YI_NorSpr086_Unknown = $0086
+!Define_YI_NorSpr086_GlitchedSprite = $0086
 !Define_YI_NorSpr087_MockUpLaidEgg = $0087
 !Define_YI_NorSpr088_SuperStar = $0088
 !Define_YI_NorSpr089_HorizontalMovingRedPlatform = $0089
@@ -465,7 +465,7 @@
 !Define_YI_NorSpr0DB_SoftBlock = $00DB
 !Define_YI_NorSpr0DC_Snowball = $00DC
 !Define_YI_NorSpr0DD_CloseWallInNavalPiranhaRoom = $00DD
-!Define_YI_NorSpr0DE = $00DE
+!Define_YI_NorSpr0DE_FallingRockPlatform = $00DE
 !Define_YI_NorSpr0DF_PiscatoryPete = $00DF			; (ie. The blurp fish like enemy)
 !Define_YI_NorSpr0E0_PreyingMantas = $00E0			; (ie. The jellyfish enemy)
 !Define_YI_NorSpr0E1_LochNestor = $00E1				; (ie. The pufferfish enemy)
@@ -648,7 +648,7 @@
 !Define_YI_NorSpr192_PetalGuy = $0192
 !Define_YI_NorSpr193_SnakeCagedGhost = $0193
 !Define_YI_NorSpr194_Blargg = $0194
-!Define_YI_NorSpr195_Unknown = $0195
+!Define_YI_NorSpr195_SmallUnstableSnowPlatform = $0195
 !Define_YI_NorSpr196_UnstableSnowPlatform = $0196
 !Define_YI_NorSpr197_ArrowSign = $0197
 !Define_YI_NorSpr198_DiagonalArrowSign = $0198
@@ -684,7 +684,7 @@
 !Define_YI_NorSpr1B6_MinigameBalloon = $01B6
 !Define_YI_NorSpr1B7_SeedSpittingMinigameBandit = $01B7
 !Define_YI_NorSpr1B8_WatermelonPot = $01B8
-!Define_YI_NorSpr1B9 = $01B9
+!Define_YI_NorSpr1B9_P2SeedSpittingMinigameBandit = $01B9
 
 !Define_YI_AmbSpr1BA = $01BA
 !Define_YI_AmbSpr1BB = $01BB
