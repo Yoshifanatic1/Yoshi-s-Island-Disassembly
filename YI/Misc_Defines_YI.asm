@@ -545,7 +545,7 @@
 !Define_YI_NorSpr12B_FatGuy = $012B
 !Define_YI_NorSpr12C_FlyOrWhirlyGuy = $012C
 !Define_YI_NorSpr12D_PrologueCutsceneYoshi = $012D
-!Define_YI_NorSpr12E_Unknown = $012E
+!Define_YI_NorSpr12E_LargePopEffect = $012E
 !Define_YI_NorSpr12F_HorizontalLavaDrop = $012F
 !Define_YI_NorSpr130_VerticalLavaDrop = $0130
 !Define_YI_NorSpr131_LockedDoor = $0131

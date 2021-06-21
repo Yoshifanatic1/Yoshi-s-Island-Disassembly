@@ -35898,7 +35898,7 @@ DATA_038000:
 	dl YI_NorSpr12B_FatGuy_Init
 	dl YI_NorSpr12C_FlyOrWhirlyGuy_Init
 	dl YI_NorSpr12D_PrologueCutsceneYoshi_Init
-	dl YI_NorSpr12E_Unknown_Init
+	dl YI_NorSpr12E_LargePopEffect_Init
 	dl YI_NorSpr12F_HorizontalLavaDrop_Init
 	dl YI_NorSpr130_VerticalLavaDrop_Init
 	dl YI_NorSpr131_LockedDoor_Init
@@ -36342,7 +36342,7 @@ DATA_03852E:
 	dl YI_NorSpr12B_FatGuy_Main
 	dl YI_NorSpr12C_FlyOrWhirlyGuy_Main
 	dl YI_NorSpr12D_PrologueCutsceneYoshi_Main
-	dl YI_NorSpr12E_Unknown_Main
+	dl YI_NorSpr12E_LargePopEffect_Main
 	dl YI_NorSpr12F_HorizontalLavaDrop_Main
 	dl YI_NorSpr130_VerticalLavaDrop_Main
 	dl YI_NorSpr131_LockedDoor_Main
@@ -36786,7 +36786,7 @@ DATA_038A5C:
 	dl YI_NorSpr12B_FatGuy_StompRt
 	dl YI_NorSpr12C_FlyOrWhirlyGuy_StompRt
 	dl YI_NorSpr12D_PrologueCutsceneYoshi_StompRt
-	dl YI_NorSpr12E_Unknown_StompRt
+	dl YI_NorSpr12E_LargePopEffect_StompRt
 	dl YI_NorSpr12F_HorizontalLavaDrop_StompRt
 	dl YI_NorSpr130_VerticalLavaDrop_StompRt
 	dl YI_NorSpr131_LockedDoor_StompRt
@@ -37230,7 +37230,7 @@ DATA_038F8A:
 	dl YI_NorSpr12B_FatGuy_RideYoshiRt
 	dl YI_NorSpr12C_FlyOrWhirlyGuy_RideYoshiRt
 	dl YI_NorSpr12D_PrologueCutsceneYoshi_RideYoshiRt
-	dl YI_NorSpr12E_Unknown_RideYoshiRt
+	dl YI_NorSpr12E_LargePopEffect_RideYoshiRt
 	dl YI_NorSpr12F_HorizontalLavaDrop_RideYoshiRt
 	dl YI_NorSpr130_VerticalLavaDrop_RideYoshiRt
 	dl YI_NorSpr131_LockedDoor_RideYoshiRt
@@ -38365,7 +38365,7 @@ YI_NorSpr129_Fuzzy_StompRt:
 YI_NorSpr12A_ShyGuyBanditTrap_StompRt:
 YI_NorSpr12B_FatGuy_StompRt:
 YI_NorSpr12D_PrologueCutsceneYoshi_StompRt:
-YI_NorSpr12E_Unknown_StompRt:
+YI_NorSpr12E_LargePopEffect_StompRt:
 YI_NorSpr12F_HorizontalLavaDrop_StompRt:
 YI_NorSpr130_VerticalLavaDrop_StompRt:
 YI_NorSpr131_LockedDoor_StompRt:
@@ -38772,7 +38772,7 @@ YI_NorSpr129_Fuzzy_RideYoshiRt:
 YI_NorSpr12B_FatGuy_RideYoshiRt:
 YI_NorSpr12C_FlyOrWhirlyGuy_RideYoshiRt:
 YI_NorSpr12D_PrologueCutsceneYoshi_RideYoshiRt:
-YI_NorSpr12E_Unknown_RideYoshiRt:
+YI_NorSpr12E_LargePopEffect_RideYoshiRt:
 YI_NorSpr12F_HorizontalLavaDrop_RideYoshiRt:
 YI_NorSpr130_VerticalLavaDrop_RideYoshiRt:
 YI_NorSpr131_LockedDoor_RideYoshiRt:
@@ -87436,7 +87436,7 @@ DATA_06B36D:
 
 ;---------------------------------------------------------------------------
 
-YI_NorSpr12E_Unknown_Init:
+YI_NorSpr12E_LargePopEffect_Init:
 ;$06B933
 	RTL
 
@@ -87457,7 +87457,7 @@ DATA_06B946:
 DATA_06B94C:
 	dw DATA_06B940,DATA_06B946
 
-YI_NorSpr12E_Unknown_Main:
+YI_NorSpr12E_LargePopEffect_Main:
 ;$06B950
 	LDA.w #$0180
 	SEC
@@ -165322,7 +165322,7 @@ else
 	%FREE_BYTES($0FE056, 6058, $FF)
 endif
 
-DATA_0FF800:
+DATA_0FF800:								; Note: Title screen tilemap
 	dw $12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8
 	dw $12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8
 	dw $12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8,$12E8
@@ -224263,7 +224263,7 @@ else
 	%FREE_BYTES($5F8A36, 2378, $FF)
 endif
 
-DATA_5F9380:
+DATA_5F9380:								; Note: Title screen tilemap
 	dw $52E8,$52CA,$52E8,$52E8,$52CC,$52E8,$52E8,$52C0
 	dw $52E8,$52CE,$52E8,$52C0,$52E8,$52CC,$52E8,$52E8
 	dw $52E8,$52CA,$52E8,$52CC,$52E8,$52E8,$52E8,$52CA
@@ -225597,7 +225597,7 @@ DATA_5FDA00:
 	dw $5ED0,$566E,$4A0C,$3DCA,$3DA9,$3567,$3147,$2906
 	dw $5ED0,$566E,$4A0C,$3DCA,$3DA9,$3567,$3147,$2906
 
-DATA_5FDA80:
+DATA_5FDA80:								; Note: Hookbill the Koopa shell palette.
 	dw $0000,$7FFF,$591F,$591F,$591F,$591F,$591F,$250C
 	dw $2510,$1CF5,$00DA,$001F,$3DD2,$4EF7,$67BD
 
